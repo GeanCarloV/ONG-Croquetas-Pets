@@ -1,0 +1,29 @@
+<div class="col-md-8 offset-md-3">
+    <!-- creamos una tarjeta para que este centrado -->
+    <div class="card mt-3">
+
+        <!-- el titurlo de la tarjeta-->
+        <div class="card-header bg-info" >
+            <h3 class="display-5">{{servicioss.ServicioDO}}</h3>
+        </div>
+
+        <!-- para el cuerpo de la tarjeta -->
+        <div class="card-body">
+            <!-- inputs para las horas requeridas -->
+            <label for="HrSer">Cuantas horas requiere? </label>
+            <span class="badge badge-pill badge-secondary" style="align-content: right">Lo maximo de horas a solivitar es {{servicioss.MaxdeHoras}}</span>
+            <input type="text" name="HrSer" #HrSer class="form-control">
+            <!-- kg de croque por los kilogramos -->
+            <h4 class="display-5" style="align-content:left;"> Kg croquetas ha donar por el servicio: 15 kg</h4>
+            <button class="btn btn-primary">Solicitar</button>
+        </div>
+
+        <!-- para el pie de pagina de la tarjeta -->    
+        <div class="card-footer text-right">
+            <h5> {{servicioss.NombrePersona}}</h5>
+        </div>
+
+
+
+    </div>
+</div>

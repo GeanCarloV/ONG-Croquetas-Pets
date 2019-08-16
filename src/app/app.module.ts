@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DonarComponent } from './donar/donar.component';
+import { CserviciosComponent } from './cservicios/cservicios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DonarComponent
+    DonarComponent,
+    CserviciosComponent
   ],
   imports: [
     BrowserModule,

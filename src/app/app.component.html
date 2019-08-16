@@ -6,7 +6,7 @@
   </ul>
 </nav>
 
-<div class="container p-5">
+<div class="container p-3">
   <!-- formulario de servicios -->
   <div class="row justify-content-md-center">
     
@@ -43,6 +43,11 @@
     <div class= "col md-5">
       <app-donar></app-donar>
     </div>
-
   </div>
+  <!-- para estar creando nuevos -->
+  <div class="row">
+  <app-cservicios *ngFor="let i of servicioss" [servicioss]="i"></app-cservicios>
+  
+  </div>
+
 </div>
