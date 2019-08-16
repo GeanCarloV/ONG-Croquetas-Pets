@@ -11,10 +11,12 @@
         <div class="card-body">
             <!-- inputs para las horas requeridas -->
             <label for="HrSer">Cuantas horas requiere? </label>
-            <span class="badge badge-pill badge-secondary" style="align-content: right">Lo maximo de horas a solivitar es {{servicioss.MaxdeHoras}}</span>
-            <input type="text" name="HrSer" #HrSer class="form-control">
+            <span class="badge badge-pill badge-secondary px-3" style="align-content: right">Lo maximo de horas a solivitar es {{servicioss.MaxdeHoras}}<br></span>
+            <!-- <input type="text" name="HrSer" #HrSer class="form-control"> -->
+            <input type="text" class="form-control p-3" (input)="onInput($event.target.value) " >
             <!-- kg de croque por los kilogramos -->
-            <h4 class="display-5" style="align-content:left;"> Kg croquetas ha donar por el servicio: 15 kg</h4>
+            <p style="align-content:left;"> Kg croquetas ha donar por el servicio: </p>
+            <h5 style="align-content: center"><u><b> {{ aux }} kg </b></u></h5>
             <button class="btn btn-primary">Solicitar</button>
         </div>
 

@@ -9,10 +9,14 @@ import { Servicios } from './cservicios.model';
 })
 export class CserviciosComponent implements OnInit {
   @Input() servicioss: Servicios;
-
+  aux: number;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onInput(value: string) {
+    this.aux = Number(value) * this.servicioss.ValorCroque ;
   }
 
 }
