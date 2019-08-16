@@ -1,0 +1,18 @@
+<div class= "col md-5">
+    <div class= "card">
+      <!-- titulo -->   
+      <h4 class="card-header bg-warning">Croquetas Donadas</h4>
+      <form class="card-body">
+        <!-- los kg que ya estan -->         
+        <h3 class="display-4" style="text-align: center"> {{model}} Kg</h3>
+        <!-- input para el titulo -->
+        <label for="croquetasD">Cuantas croquetas deseas donar? </label>
+        <input type="text" name="croquetasD" #croquetasD class="form-control">
+        <!-- para agregar boton -->
+        <button (click)="SumCroquetasD(croquetasD)" class="btn btn-warning active btn-lg mt-2 ">
+          Donar
+        </button>
+       </form>
+    </div>
+
+</div>
