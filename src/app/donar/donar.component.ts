@@ -18,7 +18,6 @@ export class DonarComponent implements OnInit {
   SumCroquetasD(croquetasD: HTMLInputElement) {
     const aux = Number(croquetasD.value);
     this.model = aux + this.model;
-    console.log(this.model);
     croquetasD.value = '';
     return false;
   }
